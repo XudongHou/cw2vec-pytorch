@@ -5,7 +5,7 @@ import multiprocessing
 BASE_DIR = Path('pycw2vec')
 
 configs = {
-    'data_path': BASE_DIR / 'dataset/raw/zhihu.txt',
+    'data_path': BASE_DIR / 'dataset/raw/ccks.txt',
     'model_save_path': BASE_DIR / 'output/checkpoints/cw2vec.pth',
     'vocab_path': BASE_DIR / 'dataset/processed/vocab.pkl', # 语料数据
     'ngram_vocab_path': BASE_DIR / 'dataset/processed/ngram_vocab.pkl',
@@ -27,7 +27,7 @@ configs = {
     'vocab_size':300000,
     'embedding_dim':50,
     'epochs':6,
-    'batch_size':64,
+    'batch_size':512,
     'window_size':5,
     'negative_sample_num':5,
     'n_gpus':[1],
